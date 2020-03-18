@@ -5,10 +5,7 @@ React component for the vis.js timeline module.
 
 [vis.js Timeline Documentation](http://visjs.org/docs/timeline)
 
-## Installation
-
 ```
-npm install --save vis
 npm install --save react-visjs-timeline
 ```
 
@@ -100,14 +97,13 @@ When the `customTimes` prop changes, the updated times will be reflected in the 
 
 ## Events
 
-All events are supported via prop function handlers. The prop name follows the convention `<eventName>Handler` and the specified function will receive the same arguments as the [vis.js counterparts](http://visjs.org/docs/timeline/#Events).
-Some visjs event names are not camelcased (e.g. `rangechange`), so the corresponding React prop names need to follow that convention where necessary:
+All events are supported via prop function handlers. The prop name follows the convention `<eventName>Handler` and the specified function will receive the same arguments as the [vis.js counterparts](http://visjs.org/docs/timeline/#Events)
 
 ```
 <Timeline
   options={options}
   clickHandler={clickHandler}
-  rangechangeHandler={rangeChangeHandler}
+  rangeChangeHandler={rangeChangeHandler}
 />
 
 function clickHandler(props) {
